@@ -7,15 +7,13 @@ public class Solution {
         {
             return answer = 1;
         }
-        else if (slice % n  == 0 || n % slice == 0)
+        else if (n % slice == 0)
         {
-            answer = slice >= n ? slice / n : n / slice;
-            return answer;
+            return n / slice;
         }
         else
         {
-            answer = slice > n ? slice / n  : n / slice + 1;
-            return answer;
+            return n / slice + 1;
         }
         
     }
